@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JavaScript</title>
+  </head>
+
+  <body>
+
+
+
+    <script type="text/javascript">
+      /* JSON */
+      var pessoa = {
+                      "nome" : "Igor",
+                      "sobrenome" : "Guilherme"
+                   };
+      console.log(pessoa);
+      console.log(pessoa.nome);
+      console.log(pessoa.sobrenome);
+
+      var texto = '{"paragrafo" : "teste teste teste teste"}';
+      console.log(texto);
+      console.log(JSON.parse(texto));
+      var obj_texto = JSON.parse(texto);
+      console.log(obj_texto);
+
+      var clientes = {
+        "clientes":
+        [
+          {"nome" : "Igor Guilherme", "idade" : 29},
+          {"nome" : "Brian Monteiro", "idade" : 23},
+          {"Nome" : "Emanuelle Cristina", "idade": 35}
+        ]
+      };
+
+      console.log(clientes);
+    </script>
+  </body>
+</html>
