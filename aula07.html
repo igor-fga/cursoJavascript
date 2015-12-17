@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JavaScript</title>
+  </head>
+
+  <body>
+
+
+
+    <script type="text/javascript">
+      /* strings */
+
+      var string1 = "nossa frase";
+      var email = new String("ifgandrade@gmail.com");
+
+      var arroba = email.indexOf("@") + 1;
+      var ponto = email.indexOf(".", arroba);
+
+      console.log(email.substring(arroba, ponto));
+      console.log(email.substring(arroba));
+      console.log(email.substring(0, arroba - 1));
+      console.log(email.replace("gmail","hotmail"));
+      console.log(email.toUpperCase());
+      console.log(email.toLowerCase());
+      console.log(email.substring(0, arroba - 1).concat("@hotmail.com").toUpperCase());
+
+
+    </script>
+  </body>
+</html>
