@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JavaScript</title>
+  </head>
+
+  <body>
+
+
+
+    <script type="text/javascript">
+      /* Objeto Date */
+
+      var data = new Date();
+      var Mensagem = "", saudacao = "";
+      var diaSemana = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado"];
+      var meses = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"];
+
+      console.log(data);
+      //document.write(data);
+
+      console.log(data.getTime());
+      console.log(data.getDate());
+      console.log(data.getFullYear());
+      console.log(data.getMonth());
+      console.log(data.getDay());
+
+      if(data.getHours() < 12) {
+        saudacao = "Bom dia!";
+      } else {
+        saudacao = "Boa tarde!";
+      }
+
+      //Seja bem vindo, hoje é terça-feira, 5 de Janeiro de 2015
+      Mensagem = saudacao + " Hoje é " + diaSemana[data.getDay()] + ", " + data.getDay() + " de " + meses[data.getMonth()] + " de " + data.getFullYear();
+      document.write(Mensagem);
+
+      console.log(diaSemana[data.getDay()]);
+      console.log(meses[data.getMonth()]);
+
+
+
+    </script>
+  </body>
+</html>

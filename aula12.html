@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JavaScript</title>
+  </head>
+
+  <body>
+
+
+
+    <script type="text/javascript">
+      /* métodos numéricos */
+      var numero = 100;
+
+      var array = [];
+
+      var numero_string = numero.toString();
+
+      var preco = 6.495;
+
+      var preco_arrendondado = preco.toFixed(2);
+
+      console.log(typeof numero);
+      console.log(typeof parseInt(numero_string));
+
+      console.log(typeof parseFloat(preco_arrendondado));
+
+      // Exibe NaN
+      console.log(parseInt("Jaison"));
+
+      //undefined = variável nao esta definida, ou seja, não existe
+      console.log(array[10]);
+
+      if(array[10] == undefined) console.log("O registro nao existe!!");
+
+    </script>
+  </body>
+</html>
