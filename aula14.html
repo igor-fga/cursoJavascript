@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JavaScript</title>
+  </head>
+
+  <body>
+    <form>
+        <input type = "text" id="campoNome" value="Igor">
+    </form>
+    <h1 id="painelMensagem"></h1>
+
+    <script type="text/javascript">
+      /* Seletor getElementById */
+
+      var campoTexto = document.getElementById("campoNome");
+      var painel = document.getElementById("painelMensagem");
+
+      var Mensagem = "Olá, seja bem vindo " + campoTexto.value;
+
+      painel.innerHTML = Mensagem;
+
+
+    </script>
+  </body>
+</html>

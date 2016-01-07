@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JavaScript</title>
+  </head>
+
+  <body>
+
+    <a href="http://www.google.com.br" onclick="return alerta()">Clique em mim!</a>
+
+    <a href="#" id="lnkMouseOver">Passe o mouse em cima</a>
+
+
+    <script type="text/javascript">
+      /* Eventos */
+      var lnkFaleConosco = document.getElementById("lnkMouseOver");
+
+      function alerta(){
+        console.log("Clicou no botão");
+        alert("Você clicou!");
+        return false;
+      }
+
+      var passaMouseEmCima = function(){
+        alert("Você passou o mouse em cima do link");
+      };
+
+      var carregaPagina = function() {
+        console.log("A página terminou de ser carregada!");
+      }
+
+      window.onload = carregaPagina;
+
+      lnkFaleConosco.onmouseover = passaMouseEmCima;
+
+    </script>
+  </body>
+</html>
