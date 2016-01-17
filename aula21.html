@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JavaScript</title>
+    <style>
+
+    .marcado, .desmarcado{
+      cursor: pointer;
+    }
+
+
+      .marcado {
+        background: green;
+        border: 1px solid black;
+      }
+
+      .desmarcado {
+        background: gray;
+        border: 1px solid red;
+      }
+
+    </style>
+
+  </head>
+
+  <body>
+    <h1>Trocar cor de fundo da página</h1>
+    <a href="#" onclick="trocarCorFundo('red')">Cor Vermelha</a>
+    <a href="#" onclick="trocarCorFundo('yellow')">Cor Amarela</a>
+    <a href="#" onclick="trocarCorFundo('green')">Cor Verde</a>
+
+    <h1>Setar nome de classe</h1>
+
+    <h2 class="desmarcado" id="chkH2">Deseja receber uma newsletter?</h2>
+
+    <script type="text/javascript">
+      /* style className */
+
+      var chkH2 = document.getElementById("chkH2");
+
+      function trocarCorFundo(cor) {
+        var body = document.getElementsByTagName('body')[0];
+        body.style.backgroundColor = cor;
+        body.style.fontSize = "60px";
+      };
+
+      chkH2.onclick = function() {
+        this.className = (this.className = "desmarcado") ? "marcado" : "desmarcado";
+
+      };
+
+
+    </script>
+  </body>
+</html>

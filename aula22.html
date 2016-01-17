@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JavaScript</title>
+
+  </head>
+
+  <body>
+
+    <button type="button" id="btnAbrePopup">Abre PopUp</button>
+    <button type="button" id="btnFechaPopup">Fecha PopUp</button>
+
+    <script type="text/javascript">
+      /* Window */
+      var popup = false;
+      var btnAbrePopup = document.getElementById('btnAbrePopup');
+      var btnFechaPopup = document.getElementById('btnFechaPopup');
+
+      btnAbrePopup.onclick = function() {
+        popup = window.open("", "NomePopup", "width=300, height=100");
+        popup.document.write("<h1>Abriu a janela popup</h1>");
+      };
+
+      btnFechaPopup.onclick = function(){
+        popup.close();
+
+      };
+
+
+    </script>
+  </body>
+</html>

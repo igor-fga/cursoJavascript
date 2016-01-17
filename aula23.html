@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JavaScript</title>
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+      /* Tratamento de erros */
+
+      try {
+        //alerta("teste");
+        var numero = "abc";
+
+        if(isNaN(numero)) throw "A variavel número contém uma string";
+
+      } catch(erro){
+        console.log("Erro detectado: " + erro);
+      } finally {
+        console.log("Esse codigo sempre executa");
+      }
+
+      console.log("teste");
+
+    </script>
+  </body>
+</html>

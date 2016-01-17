@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <title>Curso de JavaScript</title>
+
+    <style>
+      .imagemPequena {
+        margin: 8px;
+        cursor: pointer;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+    <script type="text/javascript">
+      /* Trabalhar com imagens */
+      var imagem = "";
+      var imagens = [
+                      {"imagem":"img/img_pequena.jpeg", "imagemMaior":"img/img_grande.jpeg", "alt":"R2 E BB8"},
+                      {"imagem":"img/img_pequena.jpeg", "imagemMaior":"img/img_grande.jpeg", "alt":"R2 E BB8"},
+                      {"imagem":"img/img_pequena.jpeg", "imagemMaior":"img/img_grande.jpeg", "alt":"R2 E BB8"},
+                      {"imagem":"img/img_pequena.jpeg", "imagemMaior":"img/img_grande.jpeg", "alt":"R2 E BB8"},
+                      {"imagem":"img/img_pequena.jpeg", "imagemMaior":"img/img_grande.jpeg", "alt":"R2 E BB8"},
+                      {"imagem":"img/img_pequena.jpeg", "imagemMaior":"img/img_grande.jpeg", "alt":"R2 E BB8"},
+                   ];
+
+    for(var i = 0; i < imagens.length; i++) {
+      console.log(imagens[i]);
+      imagem = document.createElement("IMG");
+      imagem.src = imagens[i].imagem;
+      imagem.alt = imagens[i].alt;
+      imagem.className = "imagemPequena";
+      imagem.setAttribute("imagemMaior", imagens[i].imagemMaior);
+      imagem.onclick = function(){
+        window.open(this.getAttribute("imagemMaior"), "ImagemMaior", "width=600, height=600");
+      };
+
+      document.body.appendChild(imagem);
+
+    }
+
+    </script>
+  </body>
+</html>
